@@ -5,7 +5,12 @@
         <script src="javaScript.js"></script>
         <script>
             sayHello();
-
+            //global variable 
+            var x=10;
+            function calculate( firstNumber, secondNmber){
+                var result=firstNumber+secondNmber ;
+                return result;
+            }
         </script>
     </head>
     <body>
@@ -16,11 +21,15 @@
          <script>
             //use of document class 
             /*
+                inside write("here we can write any html code ")
             */
-            document.write("Hello Sir")
+            document.write("<b> <i>Hello sir </i> </b>  <br>")
+            var firstName="Mina"
+            var lastName="maher"
+            alert(firstName+lastName +x+calculate(5,3))
+            
          </script>
         <!-- Headng Tag-->
-         <br>
         Heading Tag 
         <h1 > MaharaTech HTML Content </h1> 
         <h2 > MaharaTech HTML Content </h2> 
