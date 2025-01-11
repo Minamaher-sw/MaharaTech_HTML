@@ -28,10 +28,11 @@
             /*
                 inside write("here we can write any html code ")
             */
-            document.write("<b> <i>Hello sir </i> </b>  <br>")
+            document.write("<b> <i>Hello  \f sir </i> </b>  <br>")
+            document.write("<b> <i>Hello\\sir </i> </b>  <br>")
             var firstName="Mina"
             var lastName="maher"
-            alert(firstName+lastName +x+calculate(5,3))
+            alert(firstName+"\n"+lastName +x+calculate(5,3))
             
             //Hoisting 
             number_H=12;
