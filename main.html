@@ -180,6 +180,58 @@
           {
             document.write("strict Equality operator <br>")
           }
+          /*
+            Bitwise Operators:  bit by bit 
+            & Bitwise AND 
+            | Bitwise OR 
+            ^ Bitwise XOR 
+            ~ Bitwise NOT   ~0   00000000  is 11111111(-1) and ~1 ~(0000 0001) is (1111 1110)is -2 two's complement
+            << Bitwise Left Shift 
+            >> Bitwise Right Shift 
+            >>> Unsigned Right Shift
+          */
+            var x =1;
+            var y=0 ;
+            var z=y & x;
+            document.write("<br>",z ,"<br>")
+            z=y | x; 
+            document.write(z ,"<br>")
+            z=y ^ x;
+            document.write(z ,"<br>")
+            z= ~y;
+            document.write(z ,"<br>")
+            z=4;
+            z=z >>1
+            document.write(z ,"<br>")
+            z=z <<1
+            document.write(z ,"<br>")
+            z=z >>>1
+            document.write(z ,"<br>")
+            /*
+                Logical Operators:
+                &&
+                 Logical "AND" – returns true when 
+                both operands are true; otherwise it 
+                returns false  
+
+                || 
+                Logical "OR" – returns true if either 
+                operand is true. It only returns false 
+                when both operands are false  
+
+                ! 
+                Logical "NOT"—returns true if the 
+                operand is false and false if the operand 
+                is true. This is a unary operator and 
+                precedes the operand   
+             */
+                z=y && x; 
+                document.write(z ,"<br>")
+                z=y || x;
+                document.write(z ,"<br>")
+                z= !y;
+                document.write(z ,"<br>")
+
          </script>
         <!-- Headng Tag-->
         Heading Tag 
