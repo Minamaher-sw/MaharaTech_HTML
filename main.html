@@ -6,7 +6,7 @@
         <script>
             sayHello();
             //global variable 
-            var x=10;
+            var x =0;
             function calculate( firstNumber, secondNmber){
                 var result=firstNumber+secondNmber ;
                 return result;
@@ -36,8 +36,8 @@
 
             //strict mode to prevent Hoisting 
             //synatx error 
-            number_2=30;
-            alert(number_2);
+            //number_2=30;
+            //alert(number_2);
             /*
             different bet var and let 
              using of let
@@ -49,14 +49,35 @@
                 }
                 i++;
                 document.write("<br>",i)
-            for(let x =0 ; x<10 ;x++)
+            for(let x1 =0 ; x1<10 ;x1++)
             {
-                document.write(x )
+                console.log(x1);
             }
-            // error 
-            x=10;
-            document.write("<br>",x ,"<br>")
-           
+            //error
+            //console.log(x); 
+            //document.write("<br>",x ,"<br>")
+
+            //differnet bet let and var
+            function testvar()
+            {
+                var upd_num=12;
+                if(true){
+                    var upd_num =13;
+                    console.log(upd_num) // 13
+                }
+                console.log(upd_num)//13
+            }
+            function testlet()
+            {
+                let upd_num=12;
+                if(true){
+                    let upd_num =13;
+                    console.log(upd_num)//13
+                }
+                console.log(upd_num)//12
+            }
+           testvar()
+           testlet()
          </script>
         <!-- Headng Tag-->
         Heading Tag 
