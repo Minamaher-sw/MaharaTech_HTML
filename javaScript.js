@@ -21,6 +21,15 @@ function exCondStat()
     }
     else
     {
-        document.write("air is very cold <br>")
+        document.write("air is very cold <br>") 
+    }
+
+    var stuudent_grade='f'
+    switch(stuudent_grade)
+    {
+        case 'f':document.write("student fall <br>") ; break ;
+        case 'g' :document.write("student succces <br>") ; break ;
+        default :
+                document.write("student not pass <br>") ; break ;
     }
 }
