@@ -86,3 +86,57 @@ else
 {
     alert("good")
 }
+/* 
+    ******************************8   JavaScript Built-in Functions  **************
+ parseInt()    Convert string to int 
+                                        parseInt("3") //returns 3 
+                                        parseInt(“3a”) //returns 3 
+                                        parseInt(“a3”) //returns NaN 
+parseFloat()   Convert string to float 
+ 
+                                        parseFloat("3.55") //returns 3.55 
+                                        parseFloat(“3.55a”) //returns 3.55 
+                                        parseFloat(“a3.55”) //returns NaN 
+Number()  
+                The Number() function converts the 
+                object argument to a number that 
+                represents the object's value. 
+                if the value cannot be converted to a 
+                legal number, NaN is returned . 
+                                        var x1 = false, x2 = "999“, x3 = "999 888"; 
+                                        document.write(Number(x1), 
+                                        Number(x2), Number(x3));  
+                                        // returns 0, 999, Nan 
+                                        Note: 
+                                        parseInt("123hui");  //returns 123 
+                                        Number("123hui"); //returns NaN 
+String()  
+            Convert different objects to strings. 
+ 
+                                        var x1 = New Boolean(0);, x2 = 999, x3 = 
+                                        "999 888"; 
+                                        document.write(String(x1), String(x2), 
+                                        String(Sx3));  
+                                        // returns false, 999, 999 888
+*/
+var parsval =parseInt("3");
+document.write("<br>",parsval);
+
+parsval =parseInt("33A");
+document.write("<br>",parsval);
+
+parsval =parseInt("a333");
+document.write("<br>",parsval);
+
+parsval =Number("3");
+document.write("<br>",parsval);
+
+parsval =Number("33A");
+document.write("<br>",parsval);
+
+parsval =Number("a333");
+document.write("<br>",parsval);
+
+parsval=String(1233)
+document.write("<br>",parsval);
+
