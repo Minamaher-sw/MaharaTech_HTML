@@ -140,3 +140,61 @@ document.write("<br>",parsval);
 parsval=String(1233)
 document.write("<br>",parsval);
 
+/**
+ * ************** Check function 
+ * isFinite(num) 
+                (used to test number) 
+                returns true if the string 
+                contains numbers only, else 
+                false 
+                                                document.write(isFinite(33))  
+                                                //returns true 
+                                                document.write(isFinite(“Hello”))  
+                                                //returns false 
+                                                document.write(isFinite(“33a”))  
+                                                //returns false 
+isNaN(val) 
+                (used to test string) 
+                validate the argument for a 
+                number and returns true if the 
+                given value is not a number 
+                else returns false.  
+                                                document.write(isNaN(0/0)) //returns true 
+                                                document.write(isNaN("348a")) //returns 
+                                                true 
+                                                document.write(isNaN(“abc")) //returns 
+                                                true 
+                                                document.write(isNaN("348")) //returns 
+                                                false 
+eval(expression)
+                evaluates an expression and 
+                                                returns the result. 
+                                                a=999; b=777;  
+                                                document.write(eval(b + a));  
+                                                returns 1776
+ */
+var promnum=prompt("enter number" ,"here");
+if(isFinite(promnum))
+{
+    document.write("<br>",Number(promnum));
+}
+else
+{
+    document.write("<br>",parseInt(promnum));
+}
+
+promnum=prompt("enter user name " ,"here");
+if(isNaN(promnum))
+{
+    document.write("<br> correct ");
+}
+else
+{
+    document.write("<br> un correct name");
+}
+debugger;
+for(let uy=0 ;uy>10 ;uy++)
+{
+
+    console.log(uy);
+}
