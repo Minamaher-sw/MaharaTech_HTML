@@ -36,5 +36,25 @@ function exCondStat()
 
 function exLoopStat()
 {
-    
+    //for loop
+    //as c prog
+    for (var count=0 ;count <10 ;count++)
+    {
+        
+        if(count ==6)
+        {
+            continue
+        }
+        if(count == 9)
+        {
+            break
+        }
+        document.write("<br>",count);
+    }
+
+    var array=["index1","index2",3,4,5]
+    for( var item in array)
+    {
+        document.write("<br>",item);
+    }
 }
