@@ -33,3 +33,8 @@ function exCondStat()
                 document.write("student not pass <br>") ; break ;
     }
 }
+
+function exLoopStat()
+{
+    
+}
