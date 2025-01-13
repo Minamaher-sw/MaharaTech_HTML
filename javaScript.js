@@ -198,3 +198,27 @@ for(let uy=0 ;uy>10 ;uy++)
 
     console.log(uy);
 }
+/*
+    escape(string) 
+ 
+            method converts the 
+            special characters like 
+            space, colon etc. of the 
+            given string in to escape 
+            sequences.  
+                            escape("test val"); 
+                            //test%20val  
+unescape(string) 
+ 
+            function replaces the 
+            escape sequences with 
+            original values. 
+            e.g. %20 is the escape 
+            sequence for space " ".  
+                            unescape("test%20val"); 
+                            //test val
+ */
+var escret=escape("test val")
+document.write("<br>",escret);
+document.write("<br>",unescape(escret));
+
