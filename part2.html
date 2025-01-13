@@ -3,15 +3,23 @@
     <head>
         <title>part2 html</title>
         <base href="imag/" >
+        <style>
+            /*simple element selector*/
+            table{margin: 20px; padding:0px ; background-color: blue; width: 300px;border: 2px solid greenyellow;}
+            tr,th,td{border: 2px dashed yellow; margin: 0px; padding: 10px;}
+           
+            /*class element selector*/
+            td.C1{background-color: azure; color: black;}
+        </style>
     </head>
     <body>
-        <table border="2px" width="300px" bgcolor="blue" cellpadding="2px" cellspacing="5px" style="margin: 3px;">
+        <table cellspacing="5px" >
             <caption>
                 table 2
             </caption>
             <tr>
-                <th rowspan="2" width="60%" bgcolor="#00ff00">phone</th>
-                <td bgcolor="#ffaa00">01148786601</td>
+                <th rowspan="2" width="60%" >phone</th>
+                <td >01148786601</td>
             </tr>
             <tr>
                 <td>01224866601</td>
@@ -22,7 +30,7 @@
             <tr></tr>
             <tr>
                 <td rowspan="2" align="cneter" ><font size="4" color="red"><b><i>data</i></b></font></td>
-                <td>my name is mina</td>
+                <td class="C1">my name is mina</td>
             </tr>
             <tr>
                 <td height="120px">hi sir i like you</td>
