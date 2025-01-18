@@ -1,0 +1,11 @@
+/* to solve problem of dynamic height*/
+html{height: 100%;}
+body{height: 100%;}
+
+#iddiv1{text-align: center; color: blueviolet; background-color: cornsilk; height: 10%;}
+#iddiv2{color: blueviolet; background-color: cornsilk; height: 80%;}
+#iddiv3{text-align: center; color: blueviolet; background-color: cornsilk; height: 10%;}
+#idspan1{color: chartreuse; background-color: blue; display: inline-block; width:20% ;height: 100%;}
+#idspan2{color: chartreuse; background-color: rgb(186, 186, 199); display: inline-block; width:59% ;height: 100%;}
+#idspan3{color: chartreuse; background-color: rgb(42, 162, 205); display: inline-block; width:20% ;height: 100%;}
+
