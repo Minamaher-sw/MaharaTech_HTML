@@ -1,3 +1,65 @@
 /* simple element selector */ 
 p{font-size: medium; color: #e1e6eb; background-color: black;}
-div{font-size: larger; color: chartreuse; background-color: aliceblue;}
+div{font-size: large; color: chartreuse; background-color: aliceblue;}
+
+/* class selector*/
+p.p1{font-size: x-large;color: blue;background-color: bisque;}
+/*  ID selector */
+#idp1{font-size: medium;color: coral;background-color: chartreuse;}
+#idtable1{ border: 1px solid red; }
+/* universal selector eefect on body */
+*{font-size:medium; color: brown;background-color: white;}
+
+/* ############################  Multiple and combinator selector  ####################### */
+/* Comma operator short hand way */
+th,td{border: 2px dashed greenyellow; color: blue; padding: 2px;}
+
+/* element inside another eleemnt space selectro */
+div p{font-size: x-large;color: darkmagenta;}
+span p{font-size: xx-large; color: black; background-color: azure;}
+/* direct child selector */
+div.div1>p{font-size: large; color: rgb(18, 27, 204); background-color: rgb(20, 196, 87);}
+/* plus selector*/
+div+p{font-size: small; color: lightslategrey; background-color: cyan;}
+/* ~ delta selector*/
+div.div1~p{font-size: xx-large; color: lightslategrey; background-color: rgb(212, 32, 131);}
+/* Attribute selector [ | ^ $ * ~ ] */
+[width]{color: cornflowerblue;}
+/* specific value */
+[width="105px"]{color: black;}
+/* all width start with 2 */
+[width ^="2"]{color: chartreuse;}
+[width ^="3"]{color: rgb(225, 16, 176);}
+/* all width end with 2 */
+[width $="6px"]{color: rgb(225, 16, 176);}
+/* any element width contan 0 highest priority*/
+[width *="0"]{color: blue;}
+/* string contain specific word */
+[abd ~= "ccc"]{color: rgb(28, 227, 121);}
+/* string start with specific word */
+[abd |= "ccc"]{color: rgb(28, 227, 121);}
+/*############################ pseudo element ################################
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::selection
+    :hover
+*/
+h6::after{
+    content: "Mina Maher";
+    color: crimson;
+}
+h6::before{
+    color: blue;
+    content: "good morning";
+}
+h6::first-letter
+{
+    color: rgb(171, 14, 14);
+}
+h6::first-line{
+    color: black;
+}
+h6::selection{color: black;}
+h6:hover{color: coral;}
