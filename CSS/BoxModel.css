@@ -80,11 +80,74 @@ body{height: 100%;}
     border-style: dashed dotted solid groove;
     margin:120px 30px  30px 200px ;
  }
-/* Boreder Radius  // Radius of circle
+/* Boreder Radius  // Radius of circle 
  shorthand property 
- border-radius=10px 20px 10px 40px
+ border-radius=10px 20px 10px 40px 
  top-left =10px
  top-right=20px
  bottom-left =40px
  bottom-right=10px
 */
+#iddiv10{
+
+    width:120px ;
+    height: 120px;
+    border-width: 10px;
+    border-color: rgba(215, 22, 22, 0.63);
+    border-style: solid;
+    border-radius: 30px 20px 40px 50px ; 
+    /*
+    border-radius: 30px ;
+    border-radius: 30px 20px ;
+    */
+    padding: 20px;
+    margin-left: 120px;
+    /*Box Shadow 
+     three attributes at least 
+    */
+    box-shadow: inset 3px 3px 10px 30px  rgba(255, 0, 0, 0.289) ;
+}
+/* ellipce radius x 30px y =40px */
+#iddiv11{
+
+    width:120px ;
+    height: 120px;
+    border-width: 10px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.258);
+    /*
+    border-radius: 30px ;
+    border-radius: 30px 20px ;
+    */
+    padding: 20px;
+    margin: 20px 120px;
+    /* Border image short haand */
+    border-image: url(../imag/border.png)35%/ 10px 20px /0px repeat;
+    border-radius: 50px 30px/ 100px 20px ; 
+    
+}
+/* ###### Border Image source */
+#iddiv12{
+
+    width:120px ;
+    height: 120px;
+    border-width: 10px;
+    border-color: aquamarine;
+    border-style: solid;
+    background-color: aquamarine ;
+    /*
+    border-radius: 30px ;
+    border-radius: 30px 20px ;
+    */
+    padding: 20px;
+    margin: 10px 120px;
+
+    /* src of image */
+    border-image-source: url(../imag/border.png);
+    border-image-slice: 35% fill;
+    border-image-repeat: stretch ;
+    border-image-width: 10px 30px 20px 5px;
+    border-image-outset: 10px 5px 15px 20px;
+
+}
