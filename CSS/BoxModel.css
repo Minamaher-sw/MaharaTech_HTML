@@ -80,3 +80,11 @@ body{height: 100%;}
     border-style: dashed dotted solid groove;
     margin:120px 30px  30px 200px ;
  }
+/* Boreder Radius  // Radius of circle
+ shorthand property 
+ border-radius=10px 20px 10px 40px
+ top-left =10px
+ top-right=20px
+ bottom-left =40px
+ bottom-right=10px
+*/
