@@ -39,3 +39,44 @@ body{height: 100%;}
     /*display: inline-block;*/
 
 }
+
+/* Margins of box
+    margin :10px 30px  top left or top:10 px auto 
+    auto ->automatic 
+ */
+ #iddiv7{
+    width:120px;
+    height: 120px; 
+    border: 2px solid rgb(114, 250, 150);
+    margin:120px 200px ;
+ }
+ #iddiv8{
+    width:120px;
+    height: 120px; 
+    border: 2px solid rgb(114, 250, 150);
+    margin:120px 30px  30px 200px ;
+ }
+ /* Borders of box
+     determine by three attributes 
+    border-style = short hand top right bottom left 
+    border-width = short hand top right bottom left 
+    border-color = short hand top right bottom left 
+    border: 2px solid rgb(114, 250, 150);  2px for all width  top right bottom left
+                                           solid for all style  top right bottom left
+                                           color for all color  top right bottom left
+
+ */
+ #iddiv9{
+    width:120px;
+    height: 120px; 
+    /* Border */
+    border-width: 3px 6px 9px 12px;
+    /*   border-color: blue green red gray;
+    color way */
+    border-top-color:rgb(120,130,150) ;
+    border-right-color: hsla(90, 90%, 40%, .3);
+    border-bottom-color: rgba(200, 120, 50, 0.279);
+    border-left-color: hsl(100, 62%, 35%);
+    border-style: dashed dotted solid groove;
+    margin:120px 30px  30px 200px ;
+ }
