@@ -1,0 +1,148 @@
+.div1
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: black;
+}
+.div2
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(18, 224, 69);
+    position: relative;
+    top: 4px;
+    left: 20px;
+}
+.div3
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(196, 26, 26);
+    position: fixed;
+    top: 4px;
+    right: 50%;
+}
+.div4
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(71, 27, 202);
+    position: absolute;
+    top: 4px;
+    right: 50%;
+}
+.div5
+{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(140, 12, 91);
+    position: sticky;
+    top: 10px;
+    left: 90px;
+}
+/* postoin and child */
+.div6
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: black;
+    position: relative;
+    left: 120px;
+}
+.div7
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(18, 224, 69);
+    
+}
+.div8
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(196, 26, 26);
+   
+}
+.div9
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(71, 27, 202);
+    
+    
+}
+.div16
+{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: rgb(227, 216, 216);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.div17
+{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: rgb(189, 202, 192);
+    
+}
+.div18
+{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-color: rgb(207, 189, 189);
+}
+.div19
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(188, 184, 200);
+    position: absolute;
+    z-index: 10px;
+}
+.div11
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 160px;
+}
+.div12
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(198, 177, 177);
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    z-index: 30;
+}
+.div13
+{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: rgb(13, 170, 21);
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    z-index: -10;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/position.css">
+        <script src="../JS/maharatech.js"></script>
+    </head>
+    <body>
+        <script> 
+            //q7
+           // excuteExp("3+4+3") ;
+            //q3
+            /* 
+                3-	Make a function that takes today’s temperature as a parameter, prints:
+                “HOT” if the entered temperature are more than or equals 30 and 
+                “Cold” if it’s less than 30 (use ternary conditional operator)
+            */ 
+            var temp=parseInt(prompt("Enter temp value at today" ,"temp here"));
+            var res =(temp >= 30) ? "HOT" :"Cold" ;
+            alert("the temp of today " +res);
+            /*
+            4-	Change the previous function to take 2 parameters: Temperature and Actual feel temperature to have 3 cases:
+            a.	Prints normal if both of temperature and actualFeel between 25 and 30.
+            b.	Prints Cold if both of temperature and actualFeel less than 25.
+            c.	Prints Hot if both of temperature and actualFeel higher than 30.
+            d.	Prints “Ambiguous, can’t detect”, in any different case.
+
+            */
+            var temp=parseInt(prompt("Enter temp value at today" ,"temp here"));
+            var actualFeel = parseInt(prompt("Enter  Actual feel value" ,"temp here"));
+            if((temp > 25 && temp <30) &&(actualFeel > 25 && actualFeel <30))
+            {
+                alert("Normal");
+            }
+            else if(temp <25 && actualFeel <25)
+            {
+                alert("Cold");
+            }
+            else if(temp > 30 && actualFeel >30)
+            {
+                alert("Hot");
+            }
+            else
+            {
+                alert("Ambiguous, can\'t detect");
+            }
+            
+            //q5
+            var facultyName=prompt("Enter faculty name","here");
+            var retVal=checkFacType(facultyName)
+            alert(retVal)
+            //q6
+            var startNumber1=parseInt(prompt("Enter start number","here"));
+            var endNumber2= parseInt(prompt("Enter end nmber","here"));
+            checkOddNumber(startNumber1 ,endNumber2);
+            //q8
+            var cuurentYear=new Date();
+            var usreName=prompt("Enter your name ","here");
+            while(!isNaN(usreName))
+            {
+                usreName=prompt("Enter your name ","here");
+            }
+            var birthDate=prompt("Enter your Birth year ","here");
+            while(!isFinite(birthDate) && (parseInt(birthDate) < 2010))
+            {
+                birthDate=prompt("Enter your Birth year ","here");
+            }
+            birthDate =parseInt(birthDate);
+            var age =2025 - birthDate
+            document.write("<b><u>Name</u></b> :"+usreName) ;
+            document.write("<br> <b><u>Brth Year</u></b> :"+birthDate) ;
+            document.write("<br><b><u>age</u></b> :"+age) ;
+
+        </script>
+        <script>
+            //1-	Try this code using strict mode and without strict mode, what’s the difference? And why?
+            "use strict"
+            function foo() 
+            {
+                var x;
+                x = 5;
+                y = 6;   //error y is not define becouse of strict mode 
+                // solve are 1- remove strict mode 2- declare y variable
+                var y ;
+                return x + y;
+            }
+            console.log(foo());
+            var y1;	
+            y1=10; 
+            x1 = 5; 
+            console.log(x1); 
+            console.log(y1); 
+            var x1; 
+
+            var x2 = 5; 
+            console.log(x2);//undefined 
+            console.log(y2); 
+            var y2 = 7; 
+            // 4-	What are the expected errors (2 errors or undefined output) from the following code?
+            //  And why? What’s the difference between var & let?
+            function test(){
+                for (let i = 0; i < 10; i++) {
+                    let x=10;
+                    alert(i);
+                    alert (x);
+                    
+                }}
+            test();
+            //console.log(i);
+
+        </script>
+            <!--
+        7-	Make a buttons on a page when user clicks it, 
+            ask him to enter math expression (Ex. 3+4*5/10*8),
+            and then pass this expression (user input) to a function that take one parameter and execute this expression and
+            then show the result of this expression for the user in an alert in that format: (You entered: 3+4*5, and the result is: 23). 
+            -->
+            <br>
+         <button 
+            onclick=
+            "  //q2
+                 console.log(sum(
+                parseInt(prompt('enter number1 ','num1')),
+                parseInt(prompt('enter number2 ','num1'))))
+            " >
+            sum
+        </button>
+    <br>
+    
+    </body>
+</html>
